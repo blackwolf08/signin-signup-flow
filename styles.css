@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DAE0E2;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero {
+    height: 300px;
+    width: 600px;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #212121;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    background-color: #535C68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    background-color: #535C68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#right-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#left-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: #2C3335;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay-anime-right {
+    animation: 0.6s overlayanimeright linear forwards;
+}
+
+@keyframes overlayanimeright {
+    0% {
+        left: 0;
+        width: 50%;
+    }
+    50% {
+        width: 70%;
+    }
+    100% {
+        left: 50%;
+        width: 50%;
+    }
+}
+
+.overlay-anime-left {
+    animation: 0.6s overlayanimeleft linear forwards;
+}
+
+@keyframes overlayanimeleft {
+    0% {
+        left: 50%;
+        width: 50%;
+    }
+    50% {
+        width: 70%;
+    }
+    100% {
+        left: 0;
+        width: 50%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #777E8B;
+    color: #DAE0E2;
+}
+
+#left-text, #right-text {
+    color: aliceblue;
+}
+
+.slide-right {
+    animation: 0.6s slideright linear forwards;
+}
+
+@keyframes slideright {
+    0%{
+        margin-left: -40%;
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    animation: 0.6s slideleft linear forwards;
+}
+
+@keyframes slideleft {
+    0%{
+        margin-right: -40%;
+    }
+    100%{
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+.hide {
+    animation: hide 0.6s linear forwards;
+}
+
+@keyframes hide{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.x-slide-right {
+    animation: 0.6s xslideright linear forwards;
+}
+
+@keyframes xslideright {
+    0%{
+        margin-left: 0%;
+        opacity: 1;
+    }
+    100%{
+        margin-left: 40%;
+        opacity: 0;
+    }
+}
+
+.x-slide-left {
+    animation: 0.6s xslideleft linear forwards;
+}
+
+@keyframes xslideleft {
+    0%{
+        margin-left: 0%;
+        opacity: 1;
+    }
+    100%{
+        margin-left: -40%;
+        opacity: 0;
+    }
+}
+
+input {
+    padding: 8px 2px 8px 2px;
+    margin: 5px 0 5px 0;
+    border-radius: 2px;
+    border: none;
+    background-color: #DAE0E2;
+}
+
+button {
+    margin: 2px 0 2px 0;
+    padding: 7px 30px 7px 30px;
+}
+
+p {
+    font-size: 80%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+
+
+input {
+    padding-left: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+        <div class="hero">
+            <div class="left">
+                <div class="hide" id="left-txt">
+                    <h2>Create Account!</h2>
+                    <input type="text" placeholder="username">
+                    <input type="text" placeholder="password">
+                    <input type="text" placeholder="city">
+                    <input type="text" placeholder="number">
+                    <p><button>Sign Up!</button></p>
+                </div>
+            </div>
+            <div class="right">
+                <div id="right-txt">
+                    <h2>Sign In!</h2>
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <p><button>Sign In!</button></p>
+                </div>
+            </div>
+            <div class="overlay" id="overlay">
+                <div id="left-text" class="hidden">
+                    Hello Welcome Back!
+                </div>
+                <div id="right-text">
+                    New User?
+                </div>
+                <button id="btn-left">Sign Up</button>
+                <button id="btn-right" class="hidden">Sign In</button>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+</body>
+</html>
